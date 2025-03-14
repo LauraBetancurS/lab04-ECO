@@ -52,10 +52,8 @@ document.getElementById('confirmSignin').addEventListener('click', async () => {
     if (response.ok) {
         document.getElementById('createPostSection').style.display = 'block'; // Dejamos visible el área para escribir un post
         document.getElementById('signinSection').style.display = 'none'; // Ocultamos el formulario de inicio de sesión
-    } else {
-        // Si algo salió mal, mostramos un mensaje con el error
-        alert(data.message);
-    }
+    } 
+    
 });
 
 // Si alguien quiere compartir algo bonito con el mundo, tomamos su post y lo enviamos al servidor

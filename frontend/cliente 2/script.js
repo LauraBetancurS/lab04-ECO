@@ -40,11 +40,13 @@ async function loadPosts() {
         postsDiv.innerHTML += `
             <div class="feedPost">
                 <h3>${post.title}</h3> <!-- Título del post -->
-                <p><strong>By:</strong> ${post.username}</p> <!-- Autor del post -->
+                <p>By: ${post.username}</p> 
                 <p>${post.description}</p> <!-- Descripción del post -->
-                <img src="${post.imageUrl}" alt="${post.title}" style="max-width: 100%; height: auto;"> <!-- Imagen del post -->
+                <div class="postImage">
+                <img   src="${post.imageUrl}" alt="${post.title}"margin: auto; style="max-width: 100%; height: auto;" > <!-- Imagen del post -->
+                </div>
             </div>
-            <hr> <!-- Línea separadora entre posts -->
+            
         `;
     });
 }

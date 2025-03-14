@@ -76,6 +76,10 @@ h2 {
     border-radius: 10px;
     margin-top: 10px;
 }
+.postImage {
+    max-width: 100%;
+    height: auto
+}
 
 /* Animations */
 @keyframes fadeIn {
