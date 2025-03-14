@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portal🌟</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainContainer">
+        <button id="signupBtn">Sign Up</button>
+        <button id="signinBtn">Sign In</button>
+
+        <div id="signupSection" style="display: none;">
+            <h2>Create Account</h2>
+            <input type="text" id="signupUser" placeholder="Enter Username">
+            <input type="password" id="signupPass" placeholder="Enter Password">
+            <button id="confirmSignup">Register</button>
+        </div>
+
+        <div id="signinSection" style="display: none;">
+            <h2>Access Account</h2>
+            <input type="text" id="signinUser" placeholder="Enter Username">
+            <input type="password" id="signinPass" placeholder="Enter Password">
+            <button id="confirmSignin">Login</button>
+        </div>
+
+        <div id="createPostSection" style="display: none;">
+            <h2>📝 New Post</h2>
+            <input type="text" id="postHeader" placeholder="🖋️ Post Title">
+            <textarea id="postContent" placeholder="💬 Write your thoughts..."></textarea>
+            <input type="text" id="postImageLink" placeholder=" Image URL">
+            <button id="uploadPost">Post</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

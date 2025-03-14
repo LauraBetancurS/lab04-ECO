@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Soft pink gradient */
+    color: #5a4a42; /* Elegant brown */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Container */
+#mainContainer {
+    max-width: 500px;
+    margin: auto;
+    background: #fff5f8; /* Light pink background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ff8fab; /* Cute pink border */
+}
+
+/* Buttons */
+button {
+    background: #ff75a0; /* Hot pink */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff477e; /* Slightly darker pink */
+    transform: scale(1.1);
+}
+
+/* Input Fields */
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff8fab;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff477e;
+}
+
+/* Forms */
+#signupSection, #signinSection, #createPostSection {
+    background: #ffe0e9; /* Soft pastel pink */
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffb3c6; /* Light pink border */
+    margin-top: 15px;
+    display: none;
+}
+
+h1, h2 {
+    color: #ff477e;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#signupSection, #signinSection, #createPostSection {
+    animation: fadeIn 0.5s ease-in-out;
+}
