@@ -19,8 +19,14 @@
   },
   {
     "username": "knuckles",
-    "title": "100 muscle",
-    "description": "yayyyy",
+    "title": "100 musculo ",
+    "description": "knuckles yay ",
     "imageUrl": "https://cdn.avpasion.com/wp-content/uploads/2024/07/knuckles-serie-skyshowtime-01.jpg"
+  },
+  {
+    "username": "lau",
+    "title": "hola soy yo lau",
+    "description": "me gusta el spagetti ",
+    "imageUrl": "https://blog.latam.playstation.com/tachyon/sites/3/2024/09/5401671e23a1ad912428f0f4efb5cf43b16f30c6.jpg?resize=1088%2C612&crop_strategy=smart"
   }
 ]
