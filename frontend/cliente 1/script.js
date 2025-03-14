@@ -1,13 +1,16 @@
 // Cuando alguien hace clic en "Sign Up", queremos mostrar el formulario de registro
 document.getElementById('signupBtn').addEventListener('click', () => {
     document.getElementById('signupSection').style.display = 'block'; // Mostramos el formulario de registro
+    
+    
+    
     document.getElementById('signinSection').style.display = 'none'; // Ocultamos el de inicio de sesión
 });
 
 // Si hacen clic en "Sign In", entonces mostramos el formulario de inicio de sesión en su lugar
 document.getElementById('signinBtn').addEventListener('click', () => {
-    document.getElementById('signinSection').style.display = 'block'; // Mostramos el formulario de inicio de sesión
-    document.getElementById('signupSection').style.display = 'none'; // Ocultamos el de registro
+     document.getElementById('signinSection').style.display = 'block'; // Mostramos el formulario de inicio de sesión
+        document.getElementById('signupSection').style.display = 'none'; // Ocultamos el de registro
 });
 
 // Cuando alguien decide registrarse, tomamos la información y la enviamos al servidor
@@ -29,8 +32,11 @@ document.getElementById('confirmSignup').addEventListener('click', async () => {
 
 // Cuando alguien quiere iniciar sesión, enviamos sus datos al servidor para comprobar si son correctos
 document.getElementById('confirmSignin').addEventListener('click', async () => {
+    
+    const password = document.getElementById('signinPass').value;
     const username = document.getElementById('signinUser').value; // Tomamos el nombre de usuario
-    const password = document.getElementById('signinPass').value; // Tomamos la contraseña
+    
+     // Tomamos la contraseña
 
     // Enviamos los datos al servidor para iniciar sesión
     const response = await fetch('http://localhost:8000/auth/login', {
@@ -54,9 +60,12 @@ document.getElementById('confirmSignin').addEventListener('click', async () => {
 
 // Si alguien quiere compartir algo bonito con el mundo, tomamos su post y lo enviamos al servidor
 document.getElementById('uploadPost').addEventListener('click', async () => {
-    const title = document.getElementById('postHeader').value; // Título del post
+    const title = document.getElementById('postHeader').value;
+
+    // Imagen para acompañar la publicación
+    const imageUrl = document.getElementById('postImageLink').value; // Título del post
     const description = document.getElementById('postContent').value; // Descripción o mensaje bonito
-    const imageUrl = document.getElementById('postImageLink').value; // Imagen para acompañar la publicación
+     
     const username = document.getElementById('signinUser').value; // Quién está publicando
 
     // Enviamos los datos del post al servidor para guardarlo y mostrarlo a los demás
@@ -68,5 +77,5 @@ document.getElementById('uploadPost').addEventListener('click', async () => {
 
     // Recibimos la respuesta del servidor y mostramos un mensaje con lo que pasó
     const data = await response.json();
-    alert(data.message);
+         alert(data.message);
 });
